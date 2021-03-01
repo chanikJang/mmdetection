@@ -9,7 +9,7 @@ from .builder import DATASETS
 from .custom import CustomDataset
 
 
-@DATASETS.register_module()
+@DATASETS.register_module()                                             # @ : 데코레이터!
 class XMLDataset(CustomDataset):
     """XML dataset for detection.
 
