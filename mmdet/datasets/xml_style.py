@@ -37,7 +37,7 @@ class XMLDataset(CustomDataset):
         """
 
         data_infos = []
-        img_ids = mmcv.list_from_file(ann_file)
+        img_ids = mmcv.list_from_file(ann_file)                 # mmcv/fileio/parse.py 
         for img_id in img_ids:
             filename = f'JPEGImages/{img_id}.jpg'                           #f-string
             xml_path = osp.join(self.img_prefix, 'Annotations',
